@@ -6,8 +6,10 @@ Metrics Example
 ./run.sh
 ```
 
-
-
+# Links
+- Grafana : http://localhost:3000/"
+- Prometheus Targets: http://localhost:9090/"
+- Prometheus Targets: http://localhost:9090/targets"
 
 
 
@@ -24,3 +26,6 @@ content-length: 138
 {"_links":{"self":[{"href":"/bad-request","templated":false}]},"_embedded":{"errors":[{"message":"Bad Request"}]},"message":"Bad Request"}Connection closed by foreign host
 /prometheus $
 ```
+
+
+## Example echo "https://dev.to/chafroudtarek/part-1-how-to-set-up-grafana-and-prometheus-using-docker-i47"
