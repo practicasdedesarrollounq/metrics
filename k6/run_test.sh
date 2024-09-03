@@ -2,9 +2,4 @@
 
 TEST_TO_RUN="./src/run_all.js"
 
-
-k6 run -s 10s:50 \
-       -s 10s:100 \
-       -s 10s:150 \
-       -s 1m:200 \
-       $TEST_TO_RUN
+k6 run -s 10s:500 -s 10s:1000 -s 10s:5000  -s 10s:10000  $TEST_TO_RUN
