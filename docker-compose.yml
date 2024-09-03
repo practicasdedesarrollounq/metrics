@@ -1,4 +1,3 @@
-version: '3.8'
 networks:
   monitoring:
     driver: bridge
@@ -29,7 +28,7 @@ services:
     restart: unless-stopped
     #password: root123
   java_app:
-    image: practicasdedesarrollounq/java_app:1.0.5
+    image: practicasdedesarrollounq/java_app:1.0.6
     container_name: java_app_prometheus
     ports:
       - '8080:8080'

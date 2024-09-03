@@ -17,8 +17,8 @@ Metrics Example
 - Spring Boot Statistics & Endpoint Metrics: 14430
 
 
-## Example echo "https://dev.to/chafroudtarek/part-1-how-to-set-up-grafana-and-prometheus-using-docker-i47"
+-- Example echo "https://dev.to/chafroudtarek/part-1-how-to-set-up-grafana-and-prometheus-using-docker-i47"
 
 
-## Setup: https://dzone.com/articles/grafana-and-prometheus-integration-with-java-base
+-- Setup: https://dzone.com/articles/grafana-and-prometheus-integration-with-java-base
 
