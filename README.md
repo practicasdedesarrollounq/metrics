@@ -7,7 +7,7 @@ Metrics Example
 ```
 
 # Links
-- Grafana : http://localhost:3000/"
+- Grafana (admin/admin): http://localhost:3000/"
 - Prometheus Targets: http://localhost:9090/"
 - Prometheus Targets: http://localhost:9090/targets"
 
