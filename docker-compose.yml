@@ -28,7 +28,7 @@ services:
     restart: unless-stopped
     #password: root123
   java_app:
-    image: practicasdedesarrollounq/java_app:1.0.6
+    image: practicasdedesarrollounq/java_app:1.0.10
     container_name: java_app_prometheus
     ports:
       - '8080:8080'
