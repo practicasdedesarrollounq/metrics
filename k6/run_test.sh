@@ -1,6 +1,5 @@
 #!/bin/sh 
 
-#TEST_TO_RUN="./src/run_all.js"
 TEST_TO_RUN="./src/script_test_carga_multiples_url_paralelo.js"
 
 

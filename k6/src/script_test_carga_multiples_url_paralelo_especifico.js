@@ -21,7 +21,7 @@ export default function () {
  
  
    const responses = http.batch([["GET","http://localhost:8080/"],
-  ["GET","http://localhost:8080/endponts/one"],["GET","http://localhost:8080/endponts/two"]]);
+  ["GET","http://localhost:8080/endpoints/one"],["GET","http://localhost:8080/endpoints/two"]]);
 
   check(responses[0], {
     "R1 status es 200": (r) => r.status === 200,
