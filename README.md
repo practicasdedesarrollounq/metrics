@@ -13,6 +13,7 @@ Metrics Example
 
 
 # Grafana Dashboards
+- How to import dashboards:  https://grafana.com/docs/grafana/latest/dashboards/build-dashboards/import-dashboards/
 - JVM (Micrometer) Dashboard: 4701
 - Spring Boot Statistics & Endpoint Metrics: 14430
 
