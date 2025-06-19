@@ -11,6 +11,8 @@ const urls = [
     'http://localhost:8080',     // URL 1
     'http://localhost:8080/endpoints/one',  // URL 2
     'http://localhost:8080/endpoints/two',  // URL 3
+    'http://localhost:8080/endpoints/one',  // URL 4
+    'http://localhost:8080/endpoints/one',  // URL 4
 ];
 
 export default function () {
