@@ -6,7 +6,7 @@ export const options = {
     //duration: '15s',
     thresholds: {
       // 90% of requests must finish within 400ms.
-      http_req_duration: ['p(90) < 600'],
+      http_req_duration: ['p(90) < 100'],
     },
     
      stages: [
@@ -21,7 +21,7 @@ export default function () {
  
  
    const responses = http.batch([["GET","http://localhost:8080/"],
-  ["GET","http://localhost:8080/endponts/one"],["GET","http://localhost:8080/endponts/two"]]);
+  ["GET","http://localhost:8080/endpoints/one"],["GET","http://localhost:8080/endpoints/two"]]);
 
   check(responses[0], {
     "R1 status es 200": (r) => r.status === 200,
@@ -35,9 +35,9 @@ export default function () {
 
   check(responses[2], {
     "R3 status es 200": (r) => r.status === 200,
-        "R2 chequeo numero": (r) => r.body.includes("6")
+        "R3 chequeo numero": (r) => r.body.includes("6")
   }); 
 
  
- sleep(0);
+ sleep(1);
 }

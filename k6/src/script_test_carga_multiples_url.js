@@ -9,8 +9,8 @@ export const options = {
 // Lista de URLs a probar
 const urls = [
     'http://localhost:8080',     // URL 1
-    'http://localhost:8080/endponts/one',  // URL 2
-    'http://localhost:8080/endponts/two',  // URL 3
+    'http://localhost:8080/endpoints/one',  // URL 2
+    'http://localhost:8080/endpoints/two',  // URL 3
 ];
 
 export default function () {
@@ -23,6 +23,6 @@ export default function () {
             'contiene "World" en el contenido': (r) => r.body.includes('Hello World'),
         });
         
-        sleep(0);  // Tiempo de espera entre solicitudes para cada URL
     });
+    sleep(1);  // Tiempo de espera entre solicitudes para cada URL
 }

@@ -14,5 +14,5 @@ export default function () {
         'chequeo numero': (r) => r.body.includes('100'),
     });
 
-    sleep(0);  // Tiempo de espera entre las solicitudes de cada usuario
+    sleep(1);  // Tiempo de espera entre las solicitudes de cada usuario
 }

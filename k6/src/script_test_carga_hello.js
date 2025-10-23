@@ -11,8 +11,8 @@ export default function () {
 
     check(res, {
         'status es 200': (r) => r.status === 200,
-        'retorna "Hello World"': (r) => r.body.includes('Fruta'),
+        'retorna "Hello World"': (r) => r.body.includes('fruta'),
     });
 
-    sleep(0);  // Tiempo de espera entre las solicitudes de cada usuario
+    sleep(5);  // Tiempo de espera entre las solicitudes de cada usuario
 }
