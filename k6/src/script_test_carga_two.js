@@ -7,7 +7,7 @@ export const options = {
 };
 
 export default function () {
-    const res = http.get('http://localhost:8080/endponts/two');  // Cambia la URL según sea necesario
+    const res = http.get('http://localhost:8080/endpoints/two');  // Cambia la URL según sea necesario
 
     check(res, {
         'status es 200': (r) => r.status === 200,
