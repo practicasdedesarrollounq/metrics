@@ -20,6 +20,6 @@ services:
       - monitoring
     volumes:
       - ./k6/src:/scripts
-    entrypoint: ["sh", "-c", "echo '⏳ Esperando 10s a que la app levante...' && sleep 10 && echo '🚀 Ejecutando tests de K6' && k6 run /scripts/script_test_carga_hello.js"]
+    entrypoint: ["sh", "-c", "echo '⏳ Esperando 10s a que la app levante...' && sleep 10 && echo '🚀 Ejecutando tests de K6' && k6 run /scripts/script_test_carga_two.js"]
     depends_on:
       - java_app
