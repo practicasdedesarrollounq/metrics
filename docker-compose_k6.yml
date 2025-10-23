@@ -1,0 +1,25 @@
+version: '3.8'
+
+networks:
+  monitoring:
+    driver: bridge
+
+services:
+  java_app:
+    image: practicasdedesarrollounq/java_app:1.0.11
+    container_name: java_app_prometheus
+    ports:
+      - '8080:8080'
+    networks:
+      - monitoring
+
+  k6:
+    image: grafana/k6:latest
+    container_name: k6_test
+    networks:
+      - monitoring
+    volumes:
+      - ./k6/src:/scripts
+    entrypoint: ["sh", "-c", "echo '⏳ Esperando 10s a que la app levante...' && sleep 10 && echo '🚀 Ejecutando tests de K6' && k6 run /scripts/script_test_carga_hello.js"]
+    depends_on:
+      - java_app

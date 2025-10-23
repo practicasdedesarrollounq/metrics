@@ -1,0 +1,27 @@
+name: Run K6 Load Test
+
+on:
+  push:
+    branches: [ main, desarrollo ]
+  pull_request:
+    branches: [ main, desarrollo ]
+  workflow_dispatch:
+
+jobs:
+  k6-load-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Docker
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build and run K6 tests
+        run: |
+          docker compose -f docker-compose_k6.yml up --build --abort-on-container-exit
+
+      - name: Clean up
+        if: always()
+        run: docker compose -f docker-compose_k6.yml down
